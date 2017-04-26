@@ -17,7 +17,7 @@ namespace PrettyGoodPrivacy_Key
     {
         static void Main(string[] args)
         {
-            //RSA密鑰產生器 
+            //RSA密鑰產生器
             IAsymmetricCipherKeyPairGenerator kpg = GeneratorUtilities.GetKeyPairGenerator("RSA");
             //Key 構造使用參數        
             kpg.Init(new RsaKeyGenerationParameters(BigInteger.ValueOf(0x10001), new SecureRandom(), 1024, 25));  //1024 key 的長度
